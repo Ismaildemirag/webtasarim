@@ -1,0 +1,86 @@
+body {
+    background-image: url(../görseller/rollerbackground.jpg);
+    font-family: Arial, sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid;
+}
+
+.head {
+    color: #C8AA6E;
+    font-size: 2rem;
+}
+
+.links {
+    display: flex;
+    gap: 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #C8AA6E;
+    font-weight: 800;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.links a:hover {
+    color: #8C6A2E;
+    text-shadow: 0 0 10px #8C6A2E, 0 0 20px #8C6A2E;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button {
+    background: var(#C8AA6E);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px var(#8C6A2E), 0 0 40px var(#8C6A2E);
+}
