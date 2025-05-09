@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <link rel="icon" href="../görseller/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rol Öğrenme</title>
+</head>
+
+<body class="rlö">
+    <header>
+        <div class="logo"><a href="https://www.leagueoflegends.com/tr-tr/"><img src="../görseller/lol.png" alt="lol"
+                    width="180" height="130"></a></div>
+        <div class="head"><a href="../sayfalar/Roller.html" title="Roller">Roller</a></div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index.html" title="Ana Sayfa">Ana Sayfa</a></li>
+                <li><a href="oyunip.html" title="Şampiyonlar">Şampiyonlar</a></li>
+                <li><a href="ranksistemi.html" title="Rank Sistemi">Rank Sistemi</a></li>
+                <li> <a href="rünler.html" title="Rünler">Rünler</a></li>
+                <li class="dropdown">
+                    <a href="Roller.html" title="Roller" class="dropdown-btn">Roller</a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="../roller/Suikastçı.html" title="Suikastçı">Suikastçı</a></li>
+                        <li><a href="../roller/Dövüşcü.html" title="Dövüşçü">Dövüşcü</a></li>
+                        <li><a href="../roller/Büyücü.html" title="Büyücü">Büyücü</a></li>
+                        <li><a href="../roller/Tank.html" title="Tank">Tank</a></li>
+                        <li><a href="../roller/Destek.html" title="Destek">Destek</a></li>
+                        <li><a href="../roller/Nişancı.html" title="Nişancı">Nişancı</a></li>
+                    </ul>
+                </li>
+                <li><a href="Oyun.html" title="Oyun">Oyun</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </nav>
+
+        <div class="side-menu" id="sideMenu">
+            <div class="close-btn" onclick="toggleMenu()">✕</div>
+            <ul>
+                <li><a href="../index.html" title="Ana Sayfa">Ana Sayfa</a></li>
+                <li><a href="oyunip.html" title="Şampiyonlar">Şampiyonlar</a></li>
+                <li><a href="ranksistemi.html" title="Rank Sistemi">Rank Sistemi</a></li>
+                <li> <a href="rünler.html" title="Rünler">Rünler</a></li>
+                <li class="dropdown" onclick="toggleDropdown(this)">
+                    <a href="Roller.html" title="Roller">Roller</a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="../roller/Suikastçı.html" title="Suikastçı">Suikastçı</a></li>
+                        <li><a href="../roller/Dövüşcü.html" title="Dövüşçü">Dövüşcü</a></li>
+                        <li><a href="../roller/Büyücü.html" title="Büyücü">Büyücü</a></li>
+                        <li><a href="../roller/Tank.html" title="Tank">Tank</a></li>
+                        <li><a href="../roller/Destek.html" title="Destek">Destek</a></li>
+                        <li><a href="../roller/Nişancı.html" title="Nişancı">Nişancı</a></li>
+                    </ul>
+                </li>
+                <li><a href="Oyun.html" title="Oyun">Oyun</a></li>
+            </ul>
+        </div>
+    </header><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script>
+        var degerler = new URLSearchParams(window.location.search);
+        var role = degerler.getAll('role');
+        document.write("<p> En Sevdiğiniz Rol </p>");
+        document.write("<p> Rolünüz: " + role + " </p>");
+    </script>
+    <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,534 @@
+body.Ana {
+    background-image: url(görseller/indexbackground.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+body.rl {
+    background-image: url(görseller/rollerbackground.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.rnk {
+    background-image: url(görseller/ranksistemibackground.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.rn {
+    background-image: url(görseller/background.png);
+    font-family: 'Courier New', Courier, monospace;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+body.rlö {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 1000;
+
+}
+
+body.otherroll {
+    background-image: url(görseller/rollerbackground.jpg);
+    font-family: 'Courier New', Courier, monospace;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body.oyn {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-image: url(görseller/oyun.jpeg);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body.oynip {
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    background-color: black;
+    padding: 20px;
+}
+
+/*oyunip bölümü */
+h1 {
+    text-align: center;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.champion-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.champion-card {
+    background-color: #8C6A2E;
+    border-radius: 8px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.champion-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* oyunip bölümü*/
+
+/* oyun bölümü */
+.game-container {
+    text-align: center;
+    background-color: #1f1f3d;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#championDisplay {
+    margin-top: 20px;
+}
+
+#championDisplay img {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* oyun bölümü */
+header {
+    position: fixed;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.head {
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.head a {
+    text-decoration: none;
+    color: #C8AA6E;
+
+}
+
+.head a:hover {
+    color: #8C6A2E;
+    text-shadow: 0 0 10px #8C6A2E, 0 0 20px #8C6A2E;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 15px 20px;
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #C8AA6E;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+    padding: 10px;
+}
+
+.nav-list a:hover {
+    color: #8C6A2E;
+    text-shadow: 0 0 10px #8C6A2E, 0 0 20px #8C6A2E;
+}
+
+.dropdown-menu {
+    display: none;
+    background-color: black;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+}
+
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.hamburger {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: #d4a373;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.hamburger:hover {
+    color: #8C6A2E;
+    text-shadow: 0 0 10px #8C6A2E, 0 0 20px #8C6A2E;
+}
+
+/* Side menu */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 250px;
+    height: 100vh;
+    background-color: black;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    padding-top: 20px;
+    z-index: 999;
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+.side-menu .close-btn {
+    font-size: 28px;
+    color: #d4a373;
+    text-align: right;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu li {
+    border-bottom: 1px solid #333;
+}
+
+.side-menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #d4a373;
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.side-menu a:hover {
+    color: #8C6A2E;
+    text-shadow: 0 0 10px #8C6A2E, 0 0 20px #8C6A2E;
+}
+
+.side-menu .dropdown-menu {
+    display: none;
+    background-color: #111;
+}
+
+.side-menu .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Mobilde: Roller tıklandığında açılır */
+.side-menu .dropdown-menu {
+    display: none;
+}
+
+.side-menu .dropdown.open .dropdown-menu {
+    display: block;
+    position: static;
+}
+
+/*roller bölümü */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1200px;
+}
+
+img {
+
+    max-width: 100%;
+    height: auto;
+}
+
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 12.8px 32px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button {
+    background: var(#C8AA6E);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px var(#8C6A2E), 0 0 40px var(#8C6A2E);
+}
+
+/*roller bölümü */
+
+/*rank bölümü */
+h1 {
+    color: white;
+    text-align: center;
+}
+
+table {
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    /* Tablo kenarlarının birleşmesi için */
+    width: 60%;
+    /* Tablo genişliği */
+    font-size: 18px;
+}
+
+th,
+td {
+    border: 1px solid;
+    padding: 10px;
+    text-align: center;
+}
+
+/*rank bölümü */
+
+/*rün bölümü */
+.rünler {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.block {
+    text-align: center;
+}
+
+.main-img {
+    width: 150px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.thumbs {
+    display: none;
+    margin-top: 20px;
+
+}
+
+.thumbs label img {
+    width: 50px;
+    margin: 0 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.thumbs label img:hover {
+    transform: scale(1.1);
+}
+
+.desc {
+    color: white;
+    display: none;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 10px;
+
+    border-radius: 8px;
+    max-width: 350px;
+    margin-inline: auto;
+}
+
+#toggle-1:checked+label+.thumbs-1 {
+    display: block;
+}
+
+#show1-1:checked~label[for="show1-1"]~label[for="show2-1"]~label[for="show3-1"]~#desc1-1,
+#show2-1:checked~label[for="show2-1"]~label[for="show3-1"]~label[for="show4-1"]~#desc2-1,
+#show3-1:checked~label[for="show3-1"]~label[for="show4-1"]~#desc3-1,
+#show4-1:checked~label[for="show4-1"]~#desc4-1 {
+    display: block;
+}
+
+#toggle-2:checked+label+.thumbs-2 {
+    display: block;
+}
+
+#show1-2:checked~label[for="show1-2"]~label[for="show2-2"]~label[for="show3-2"]~#desc1-2,
+#show2-2:checked~label[for="show2-2"]~label[for="show3-2"]~#desc2-2,
+#show3-2:checked~label[for="show3-2"]~#desc3-2 {
+    display: block;
+}
+
+#toggle-3:checked+label+.thumbs-3 {
+    display: block;
+}
+
+#show1-3:checked~label[for="show1-3"]~label[for="show2-3"]~label[for="show3-3"]~#desc1-3,
+#show2-3:checked~label[for="show2-3"]~label[for="show3-3"]~#desc2-3,
+#show3-3:checked~label[for="show3-3"]~#desc3-3 {
+    display: block;
+}
+
+#toggle-4:checked+label+.thumbs-4 {
+    display: block;
+}
+
+#show1-4:checked~label[for="show1-4"]~label[for="show2-4"]~label[for="show3-4"]~#desc1-4,
+#show2-4:checked~label[for="show2-4"]~label[for="show3-4"]~#desc2-4,
+#show3-4:checked~label[for="show3-4"]~#desc3-4 {
+    display: block;
+}
+
+/*rün bölümü */
+
+/*diğer roller bölümü */
+ol {
+    color: white;
+    text-align: center;
+    align-items: center;
+    list-style-position: inside;
+}
+
+/*diğer roller bölümü */
+
+
+div.content {
+    margin-left: 12%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1200px) {
+
+    header {
+        height: 17%;
+        font-size: 20px;
+    }
+
+    p,
+    h2 {
+        font-size: 25px;
+    }
+
+    body.rnk {
+        padding-left: 20px;
+    }
+
+    body.otherroll {
+        padding-left: 20px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    div.content {
+        padding-top: 50px;
+        margin-left: 0;
+    }
+
+}
