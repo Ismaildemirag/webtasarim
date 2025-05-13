@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <link rel="shortcut icon" href="görseller/favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riot Games</title>
+</head>
+
+<body class="Ana">
+  <header>
+    <div class="logo"><a href="https://www.leagueoflegends.com/tr-tr/"><img src="görseller/lol.png" alt="lol"
+          width="180" height="130"></a></div>
+    <div class="head"><a href="index.html" title="Ana Sayfa">League of Legends</a></div>
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html" title="Ana Sayfa">Ana Sayfa</a></li>
+        <li><a href="sayfalar/oyunip.html" title="Şampiyonlar">Şampiyonlar</a></li>
+        <li><a href="sayfalar/ranksistemi.html" title="Rank Sistemi">Rank Sistemi</a></li>
+        <li> <a href="sayfalar/rünler.html" title="Rünler">Rünler</a></li>
+        <li class="dropdown">
+          <a href="sayfalar/Roller.html" title="Roller" class="dropdown-btn">Roller</a>
+          <ul class="dropdown-menu">
+            <li> <a href="roller/Suikastçı.html" title="Suikastçı">Suikastçı</a></li>
+            <li><a href="roller/Dövüşcü.html" title="Dövüşçü">Dövüşcü</a></li>
+            <li><a href="roller/Büyücü.html" title="Büyücü">Büyücü</a></li>
+            <li><a href="roller/Tank.html" title="Tank">Tank</a></li>
+            <li><a href="roller/Destek.html" title="Destek">Destek</a></li>
+            <li><a href="roller/Nişancı.html" title="Nişancı">Nişancı</a></li>
+          </ul>
+        </li>
+        <li><a href="sayfalar/Oyun.html" title="Oyun">Oyun</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </nav>
+
+    <div class="side-menu" id="sideMenu">
+      <div class="close-btn" onclick="toggleMenu()">✕</div>
+      <ul>
+        <li><a href="index.html" title="Ana Sayfa">Ana Sayfa</a></li>
+        <li><a href="sayfalar/oyunip.html" title="Şampiyonlar">Şampiyonlar</a></li>
+        <li><a href="sayfalar/ranksistemi.html" title="Rank Sistemi">Rank Sistemi</a></li>
+        <li> <a href="sayfalar/rünler.html" title="Rünler">Rünler</a></li>
+        <li class="dropdown" onclick="toggleDropdown(this)">
+          <a href="sayfalar/Roller.html" title="Roller">Roller</a>
+          <ul class="dropdown-menu">
+            <li> <a href="roller/Suikastçı.html" title="Suikastçı">Suikastçı</a></li>
+            <li><a href="roller/Dövüşcü.html" title="Dövüşçü">Dövüşcü</a></li>
+            <li><a href="roller/Büyücü.html" title="Büyücü">Büyücü</a></li>
+            <li><a href="roller/Tank.html" title="Tank">Tank</a></li>
+            <li><a href="roller/Destek.html" title="Destek">Destek</a></li>
+            <li><a href="roller/Nişancı.html" title="Nişancı">Nişancı</a></li>
+          </ul>
+        </li>
+        <li><a href="sayfalar/Oyun.html" title="Oyun">Oyun</a></li>
+      </ul>
+    </div>
+  </header><br><br><br><br><br><br><br>
+
+
+  <div class="content">
+    <p>League of Legends (LoL), Riot Games tarafından geliştirilen ve 2009 yılında piyasaya sürülen çevrim içi çok
+      oyunculu
+      savaş arenası (MOBA - Multiplayer Online Battle Arena) türünde bir oyundur. Strateji, takım oyunu ve bireysel
+      yeteneklerin ön planda olduğu bu oyun, dünya çapında milyonlarca oyuncuya sahiptir.</p>
+    <!-- çizgi atmak için <hr> </!-->
+
+    <h2>Oyun Mekaniği</h2>
+    <p>LoL’de iki takım, beşer kişiden oluşan bir harita üzerinde karşı karşıya gelir. Oyunun temel amacı, rakip takımın
+      Nexus adlı ana yapısını yok etmektir.</p>
+    <p><strong>Ana Harita:</strong> Sihirdar Vadisi (Summoner’s Rift)</p>
+    <p><strong>Takımlar:</strong> Mavi ve Kırmızı olmak üzere iki takım vardır.</p>
+    <p><strong>Maç Süresi:</strong> Genellikle 20-45 dakika arasıdır.</p>
+    <p><strong>Üst Koridor (Top Lane):</strong> Tanklar veya dövüşçüler oynar.</p>
+    <p><strong>Orman (Jungle):</strong> Haritada dolaşıp tarafsız canavarları keser ve takımına baskınlar düzenler.</p>
+    <p><strong>Orta Koridor (Mid Lane):</strong> Genellikle büyücüler veya suikastçılar yer alır.</p>
+    <p><strong>Alt Koridor - Taşıyıcı (ADC):</strong> Yüksek hasar veren şampiyonlar oynar.</p>
+    <p><strong>Alt Koridor - Destek (Support):</strong> Takım arkadaşlarını korur ve kontrol sağlar.</p>
+  </div><br>
+
+  <footer>
+    <div class="logo"><a href="https://www.leagueoflegends.com/tr-tr/"><img src="görseller/lol.png" alt="lol"
+          width="180"></a>
+    </div>
+    <div class="copyy">
+      &copy; 2025 League of Legends. Riot Games ile resmi bir bağlantısı yoktur.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
